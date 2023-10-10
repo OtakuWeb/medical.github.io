@@ -1,0 +1,97 @@
+#about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)20%,rgba(0, 0, 0, 0.7)70%), url(/img/width5.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 1.5rem;
+    background-attachment: fixed;
+    height: 80vh;
+    box-shadow: 1px 1px 5px grey;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 80%;
+        background: $black-color;
+        width: 80%;
+        margin: 2% auto;
+        border-radius: 5px;
+     
+        .about_content{
+            padding: 4rem 2rem;
+            width: 60%;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            line-height: 2rem;
+            h1{
+                font-weight: 500;
+                font-size: 40px;
+                color: $secondary-color;
+            }
+
+            p{
+                color: rgb(255, 255, 255);
+                line-height: 2rem;
+                
+            }
+        }
+
+
+        .about_img{
+            width: 30%;
+           
+            img{
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 65vh;
+                border-radius: 1%;
+
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 840px){
+    #about{
+        height: fit-content;
+        padding: 1rem;
+        .container{
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            border-radius: 5px;
+
+            .about_content{
+                width: 70%;
+            }
+            .about_img{
+                width: 50%;
+                
+                img{
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #about{
+       
+
+        .container{
+            flex-direction: column;
+
+            .about_content{
+                width: 100%;
+                padding: .5rem;
+            }
+
+            .about_img{
+                width: 100%;
+            }
+        }
+    }
+}
